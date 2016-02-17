@@ -18,8 +18,10 @@ module Color
   CYAN = "#0088aa"
   NO_ = "#ff00ff"
 
-  def dilute(color, amount="0a")
-    "#{color}#{amount}"
+  def dilute(color, percent)
+    scaled = 255 * (percent / 100.0)
+    alpha = format("%02x", scaled)
+    "#{color}#{alpha}"
   end
 
   def plistify(xml, data)
@@ -72,15 +74,14 @@ module Color
       divider: BLACK,
       foreground: FG,
       invisibles: RED,
-      lineHighlight: dilute(BLACK, "08"),
-      selection: dilute(BLACK, "33"),
+      lineHighlight: dilute(BLACK, 3),
+      selection: dilute(BLACK, 20),
       selectionForeground: BLACK,
-      shadow: dilute(BLACK, "40"),
+      shadow: dilute(BLACK, 25),
       shadowWidth: 8,
-      gutter: dilute(WHITE, "80"),
-      gutterForeground: dilute(BLACK, "50"),
-      guide: dilute(BLACK, "18"),
-      activeGuide: dilute(BLACK, "30"),
+      gutterForeground: dilute(BLACK, 30),
+      guide: dilute(BLACK, 12),
+      activeGuide: dilute(BLACK, 25),
     }
   end
 
@@ -152,8 +153,8 @@ module Color
   def style(color, *font_style)
     {
       foreground: color,
-      background: dilute(color),
-      fontStyle: font_style.map(&:to_s).join(" "),
+      background: dilute(color, 4),
+      fontStyle: font_style.join(" "),
     }
   end
 
@@ -163,14 +164,14 @@ module Color
     "Punctuation" => style(YELLOW),
     "Delimiters" => style(YELLOW),
     "Operators" => style(YELLOW),
-    "Search" => style(PURPLE, :bold),
-    "Keywords" => style(BLUE, :bold),
+    "Search" => style(PURPLE, "bold"),
+    "Keywords" => style(BLUE, "bold"),
     "Variables" => style(CYAN),
     "Functions" => style(CYAN),
     "Classes" => style(PURPLE,),
-    "Methods" => style(PURPLE, :bold),
-    "Storage" => style(BLUE, :bold),
-    "Support" => style(PURPLE, :bold),
+    "Methods" => style(PURPLE, "bold"),
+    "Storage" => style(BLUE, "bold"),
+    "Support" => style(PURPLE, "bold"),
     "Strings" => style(RED),
     "Symbols" => style(ORANGE),
     "Integers" => style(ORANGE),
@@ -181,12 +182,12 @@ module Color
     "Attributes" => style(CYAN),
     "Attribute IDs" => style(CYAN),
     "Selector" => style(NO_),
-    "Headings" => style(BLUE, :bold),
+    "Headings" => style(BLUE, "bold"),
     "Units" => style(NO_),
-    "Bold" => style(PURPLE, :bold),
-    "Italic" => style(PURPLE, :italic),
+    "Bold" => style(PURPLE, "bold"),
+    "Italic" => style(PURPLE, "italic"),
     "Code" => style(RED),
-    "Link Text" => style(BLACK, :bold),
+    "Link Text" => style(BLACK, "bold"),
     "Link Url" => style(BLUE),
     "Lists" => style(ORANGE),
     "Quotes" => style(YELLOW),
@@ -198,12 +199,12 @@ module Color
     "Regular Expressions" => style(ORANGE),
     "Escape Characters" => style(GREEN),
     "Embedded" => style(PURPLE),
-    "Broken" => style("RED", :bold),
-    "Deprecated" => style("RED", :bold),
-    "Unimplemented" => style("RED", :bold),
+    "Broken" => style(RED, "bold"),
+    "Deprecated" => style(RED, "bold"),
+    "Unimplemented" => style(RED, "bold"),
     "Illegal" => {
       foreground: WHITE,
-      background: dilute(RED, "cc"),
+      background: dilute(RED, 80),
       fontStyle: "bold",
     },
   }
