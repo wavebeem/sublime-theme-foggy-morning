@@ -255,17 +255,6 @@ module Color
   end
 end
 
-THEME_PATH =
-  File.join(
-    Dir.home,
-    "Library",
-    "Application Support",
-    "Sublime Text 3",
-    "Packages",
-    "User",
-    "Blue Blur.tmTheme"
-  )
-
 doc = Nokogiri::XML::Builder.new(encoding: "UTF-8") do |xml|
   xml.doc.create_internal_subset(
     "plist",
@@ -275,5 +264,16 @@ doc = Nokogiri::XML::Builder.new(encoding: "UTF-8") do |xml|
   xml.plist { Color.plistify(xml, Color.config) }
 end
 xml = doc.to_xml
+
 puts "Saving theme!"
-File.write(THEME_PATH, xml)
+path =
+  File.join(
+    Dir.home,
+    "Library",
+    "Application Support",
+    "Sublime Text 3",
+    "Packages",
+    "User",
+    "Blue Blur.tmTheme"
+  )
+File.write(path, xml)
