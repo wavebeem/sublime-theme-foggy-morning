@@ -88,33 +88,67 @@ module Color
   def scopes
     scopes = [
       ["Parameter", "variable.parameter.function"],
-      ["Comments", "comment, punctuation.definition.comment"],
-      ["Punctuation",
-      "punctuation.definition.string, punctuation.definition.variable, punctuation.definition.string, punctuation.definition.parameters, punctuation.definition.string, punctuation.definition.array, punctuation.terminator"],
-      ["Delimiters", "punctuation.separator, punctuation.section, meta.brace, meta.delimiter"],
+      ["Comments", [
+        "comment",
+        "punctuation.definition.comment"
+      ]],
+      ["Punctuation", [
+        "punctuation.definition.string",
+        "punctuation.definition.variable",
+        "punctuation.definition.string",
+        "punctuation.definition.parameters",
+        "punctuation.definition.string",
+        "punctuation.definition.array",
+        "punctuation.terminator"
+      ]],
+      ["Delimiters", [
+        "punctuation.separator",
+        "punctuation.section",
+        "meta.brace",
+        "meta.delimiter"
+      ]],
       ["Operators", "keyword.operator"],
       ["Keywords", "keyword"],
       ["Variables", "variable"],
       ["Search", "entity.name.filename.find-in-files"],
-      ["Functions",
-      "entity.name.function, meta.require, support.function.any-method"],
-      ["Classes", "support.class, entity.name.class, entity.name.type.class, meta.class"],
+      ["Functions", [
+        "entity.name.function",
+        "meta.require",
+        "support.function.any-method"
+      ]],
+      ["Classes", [
+        "support.class",
+        "entity.name.class",
+        "entity.name.type.class",
+        "meta.class"
+      ]],
       ["Methods", "keyword.other.special-method"],
       ["Storage", "storage"],
       ["Support", "support.function"],
-      ["Strings", "string, entity.other.inherited-class, punctuation.definition.string"],
+      ["Strings", [
+        "string",
+        "entity.other.inherited-class",
+        "punctuation.definition.string"
+      ]],
       ["Integers", "constant.numeric"],
       ["Symbols", "constant.other.symbol"],
       ["Floats", "none"],
       ["Boolean", "constant.language.boolean"],
       ["Constants", "constant"],
-      ["Tags", "entity.name.tag, punctuation.definition.tag"],
+      ["Tags", [
+        "entity.name.tag",
+        "punctuation.definition.tag"
+      ]],
       ["Attributes", "entity.other.attribute-name"],
-      ["Attribute IDs",
-      "entity.other.attribute-name.id, punctuation.definition.entity"],
+      ["Attribute IDs", [
+        "entity.other.attribute-name.id",
+        "punctuation.definition.entity"
+      ]],
       ["Selector", "meta.selector"],
-      ["Headings",
-      "markup.heading punctuation.definition.heading, entity.name.section"],
+      ["Headings", [
+        "markup.heading punctuation.definition.heading",
+        "entity.name.section"
+      ]],
       ["Units", "keyword.other.unit"],
       ["Bold", "markup.bold, punctuation.definition.bold"],
       ["Italic", "markup.italic, punctuation.definition.italic"],
@@ -130,13 +164,20 @@ module Color
       ["Colors", "constant.other.color"],
       ["Regular Expressions", "string.regexp"],
       ["Escape Characters", "constant.character.escape"],
-      ["Embedded", "punctuation.section.embedded, variable.interpolation"],
-      ["Illegal", "invalid, invalid.illegal"],
+      ["Embedded", [
+        "punctuation.section.embedded",
+        "variable.interpolation"
+      ]],
+      ["Illegal", [
+        "invalid",
+        "invalid.illegal"
+      ]],
       ["Broken", "invalid.broken"],
       ["Deprecated", "invalid.deprecated"],
       ["Unimplemented", "invalid.unimplemented"],
     ]
     scopes.map {|name, scope|
+      scope = scope.join(", ") if scope.is_a?(Array)
       settings = named_scope_to_settings(name)
       if settings
         {
