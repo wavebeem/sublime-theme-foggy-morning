@@ -61,7 +61,7 @@ module Color
   def config
     {
       author: "Brian Mock <brian@mockbrian.com>",
-      name: "Blue Blur",
+      name: "Morning Fog",
       colorSpaceName: "sRGB",
       uuid: "263f4a1c-f382-11e4-8f8f-20c9d048f613",
       settings: [{ settings: settings }, *scopes],
@@ -74,11 +74,12 @@ module Color
       divider: BLACK,
       foreground: FG,
       invisibles: RED,
-      lineHighlight: dilute(BLACK, 3),
-      selection: dilute(BLACK, 20),
-      selectionForeground: BLACK,
+      lineHighlight: dilute(CYAN, 10),
+      selection: dilute(CYAN, 20),
+      selectionForeground: dilute(BLACK, 85),
       shadow: dilute(BLACK, 25),
       shadowWidth: 8,
+      gutter: dilute(BLACK, 0),
       gutterForeground: dilute(BLACK, 30),
       guide: dilute(BLACK, 12),
       activeGuide: dilute(BLACK, 25),
@@ -194,35 +195,35 @@ module Color
   def style(color, *font_style)
     {
       foreground: color,
-      background: dilute(color, 4),
+      background: dilute(color, 5),
       fontStyle: font_style.join(" "),
     }
   end
 
  @_settings = {
-    "Parameter" => style(PURPLE),
+    "Parameter" => style(BLACK, "bold"),
     "Comments" => style(GREEN),
     "Punctuation" => style(YELLOW),
     "Delimiters" => style(YELLOW),
     "Operators" => style(YELLOW),
     "Search" => style(PURPLE, "bold"),
     "Keywords" => style(BLUE, "bold"),
-    "Variables" => style(CYAN),
-    "Functions" => style(CYAN),
-    "Classes" => style(PURPLE,),
+    # "Variables" => style(CYAN),
+    "Functions" => style(CYAN, "bold"),
+    "Classes" => style(PURPLE, "bold"),
     "Methods" => style(PURPLE, "bold"),
     "Storage" => style(BLUE, "bold"),
-    "Support" => style(PURPLE, "bold"),
+    "Support" => style(PURPLE),
     "Strings" => style(RED),
     "Symbols" => style(ORANGE),
     "Integers" => style(ORANGE),
     "Floats" => style(ORANGE),
     "Boolean" => style(ORANGE),
-    "Constants" => style(PURPLE),
+    "Constants" => style(PURPLE, "bold"),
     "Tags" => style(BLUE),
     "Attributes" => style(CYAN),
     "Attribute IDs" => style(CYAN),
-    "Selector" => style(NO_),
+    "Selector" => style(PURPLE),
     "Headings" => style(BLUE, "bold"),
     "Units" => style(NO_),
     "Bold" => style(PURPLE, "bold"),
@@ -274,6 +275,7 @@ path =
     "Sublime Text 3",
     "Packages",
     "User",
-    "Blue Blur.tmTheme"
+    "Morning Fog.tmTheme"
   )
 File.write(path, xml)
+File.write("Morning Fog.tmTheme", xml)
