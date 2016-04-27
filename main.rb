@@ -76,7 +76,7 @@ module Color
       invisibles: RED,
       lineHighlight: dilute(CYAN, 10),
       selection: dilute(CYAN, 20),
-      selectionForeground: dilute(BLACK, 85),
+      selectionForeground: dilute(BLACK, 90),
       shadow: dilute(BLACK, 25),
       shadowWidth: 8,
       gutter: dilute(BLACK, 0),
