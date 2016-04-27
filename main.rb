@@ -63,6 +63,7 @@ module Color
       author: "Brian Mock <brian@mockbrian.com>",
       name: "Morning Fog",
       colorSpaceName: "sRGB",
+      comment: "https://github.com/wavebeem/sublime-theme-foggy-morning",
       uuid: "263f4a1c-f382-11e4-8f8f-20c9d048f613",
       settings: [{ settings: settings }, *scopes],
     }

@@ -8,6 +8,8 @@
     <string>Morning Fog</string>
     <key>colorSpaceName</key>
     <string>sRGB</string>
+    <key>comment</key>
+    <string>https://github.com/wavebeem/sublime-theme-foggy-morning</string>
     <key>uuid</key>
     <string>263f4a1c-f382-11e4-8f8f-20c9d048f613</string>
     <key>settings</key>
