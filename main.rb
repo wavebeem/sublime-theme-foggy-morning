@@ -18,6 +18,8 @@ module Color
   CYAN = "#0088aa"
   NO_ = "#ff00ff"
 
+  THEME_NAME = "Foggy Morning"
+
   def dilute(color, percent)
     scaled = 255 * (percent / 100.0)
     alpha = format("%02x", scaled)
@@ -61,7 +63,7 @@ module Color
   def config
     {
       author: "Brian Mock <brian@mockbrian.com>",
-      name: "Morning Fog",
+      name: "#{THEME_NAME}",
       colorSpaceName: "sRGB",
       comment: "https://github.com/wavebeem/sublime-theme-foggy-morning",
       uuid: "263f4a1c-f382-11e4-8f8f-20c9d048f613",
@@ -276,7 +278,7 @@ path =
     "Sublime Text 3",
     "Packages",
     "User",
-    "Morning Fog.tmTheme"
+    "#{Color::THEME_NAME}.tmTheme"
   )
 File.write(path, xml)
-File.write("Morning Fog.tmTheme", xml)
+File.write("#{Color::THEME_NAME}.tmTheme", xml)
