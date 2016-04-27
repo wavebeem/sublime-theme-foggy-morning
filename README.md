@@ -1,5 +1,5 @@
-# sublime-theme-blue-blur
+# Foggy Morning (Sublime Theme)
 
-Blue Blur (Sublime Theme)
+Work in progress light blue theme with "foggy" accents for Sublime Text. Should make you think of staring at blurry taillights during a foggy morning commute.
 
-Work in progress light blue theme with neon accents for Sublime Text.
+![screenshot](screenshot.png)
