@@ -128,6 +128,7 @@ module Color
         "support.class",
         "entity.name.class",
         "entity.name.type.class",
+        "entity.name.type.module",
         "meta.class"
       ]],
       ["Methods", "keyword.other.special-method"],
@@ -142,7 +143,10 @@ module Color
       ["Symbols", "constant.other.symbol"],
       ["Floats", "none"],
       ["Boolean", "constant.language.boolean"],
-      ["Constants", ["constant", "variable.language.this"]],
+      ["Constants", [
+        "constant",
+        "variable.language"
+      ]],
       ["Tags", [
         "entity.name.tag",
         "punctuation.definition.tag"

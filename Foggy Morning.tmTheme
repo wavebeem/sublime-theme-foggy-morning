@@ -199,7 +199,7 @@
         <key>name</key>
         <string>Classes</string>
         <key>scope</key>
-        <string>support.class, entity.name.class, entity.name.type.class, meta.class</string>
+        <string>support.class, entity.name.class, entity.name.type.class, entity.name.type.module, meta.class</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -334,7 +334,7 @@
         <key>name</key>
         <string>Constants</string>
         <key>scope</key>
-        <string>constant, variable.language.this</string>
+        <string>constant, variable.language</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
