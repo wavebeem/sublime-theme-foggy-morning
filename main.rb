@@ -83,7 +83,6 @@ module Color
       shadow: dilute(BLACK, 25),
       shadowWidth: 8,
       gutter: dilute(BLACK, 0),
-      # gutter: "#263238",
       gutterForeground: dilute(BLACK, 30),
       guide: dilute(BLACK, 12),
       activeGuide: dilute(BLACK, 25),
@@ -159,8 +158,14 @@ module Color
         "entity.name.section"
       ]],
       ["Units", "keyword.other.unit"],
-      ["Bold", "markup.bold, punctuation.definition.bold"],
-      ["Italic", "markup.italic, punctuation.definition.italic"],
+      ["Bold", [
+        "markup.bold",
+        "punctuation.definition.bold"
+      ]],
+      ["Italic", [
+        "markup.italic",
+        "punctuation.definition.italic"
+      ]],
       ["Code", "markup.raw.inline"],
       ["Link Text", "string.other.link"],
       ["Link Url", "meta.link"],
