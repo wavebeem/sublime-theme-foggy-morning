@@ -83,6 +83,7 @@ module Color
       shadow: dilute(BLACK, 25),
       shadowWidth: 8,
       gutter: dilute(BLACK, 0),
+      # gutter: "#263238",
       gutterForeground: dilute(BLACK, 30),
       guide: dilute(BLACK, 12),
       activeGuide: dilute(BLACK, 25),
@@ -91,6 +92,7 @@ module Color
 
   def scopes
     scopes = [
+      ["Call", "meta.function-call"],
       ["Parameter", "variable.parameter.function"],
       ["Comments", [
         "comment",
@@ -113,7 +115,10 @@ module Color
       ]],
       ["Operators", "keyword.operator"],
       ["Keywords", "keyword"],
-      ["Variables", "variable"],
+      ["Variables", [
+        "variable.paramter",
+        "variable.other"
+      ]],
       ["Search", "entity.name.filename.find-in-files"],
       ["Functions", [
         "entity.name.function",
@@ -138,10 +143,7 @@ module Color
       ["Symbols", "constant.other.symbol"],
       ["Floats", "none"],
       ["Boolean", "constant.language.boolean"],
-      ["Constants", [
-        "constant",
-        "variable.language.this.js"
-      ]],
+      ["Constants", ["constant", "variable.language.this"]],
       ["Tags", [
         "entity.name.tag",
         "punctuation.definition.tag"
@@ -201,12 +203,13 @@ module Color
   def style(color, *font_style)
     {
       foreground: color,
-      background: dilute(color, 5),
+      background: dilute(color, 6),
       fontStyle: font_style.join(" "),
     }
   end
 
  @_settings = {
+    "Call" => style(PURPLE),
     "Parameter" => style(BLACK, "bold"),
     "Comments" => style(GREEN),
     "Punctuation" => style(YELLOW),
@@ -214,7 +217,7 @@ module Color
     "Operators" => style(YELLOW),
     "Search" => style(PURPLE, "bold"),
     "Keywords" => style(BLUE, "bold"),
-    # "Variables" => style(CYAN),
+    "Variables" => style(CYAN),
     "Functions" => style(CYAN, "bold"),
     "Classes" => style(PURPLE, "bold"),
     "Methods" => style(PURPLE, "bold"),

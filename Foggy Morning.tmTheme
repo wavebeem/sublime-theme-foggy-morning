@@ -47,6 +47,21 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>Call</string>
+        <key>scope</key>
+        <string>meta.function-call</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#aa00ee</string>
+          <key>background</key>
+          <string>#aa00ee0f</string>
+          <key>fontStyle</key>
+          <string/>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>Parameter</string>
         <key>scope</key>
         <string>variable.parameter.function</string>
@@ -55,7 +70,7 @@
           <key>foreground</key>
           <string>#222222</string>
           <key>background</key>
-          <string>#2222220c</string>
+          <string>#2222220f</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
@@ -70,7 +85,7 @@
           <key>foreground</key>
           <string>#00aa00</string>
           <key>background</key>
-          <string>#00aa000c</string>
+          <string>#00aa000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -85,7 +100,7 @@
           <key>foreground</key>
           <string>#bb9900</string>
           <key>background</key>
-          <string>#bb99000c</string>
+          <string>#bb99000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -100,7 +115,7 @@
           <key>foreground</key>
           <string>#bb9900</string>
           <key>background</key>
-          <string>#bb99000c</string>
+          <string>#bb99000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -115,7 +130,7 @@
           <key>foreground</key>
           <string>#bb9900</string>
           <key>background</key>
-          <string>#bb99000c</string>
+          <string>#bb99000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -130,9 +145,24 @@
           <key>foreground</key>
           <string>#0000cc</string>
           <key>background</key>
-          <string>#0000cc0c</string>
+          <string>#0000cc0f</string>
           <key>fontStyle</key>
           <string>bold</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Variables</string>
+        <key>scope</key>
+        <string>variable.paramter, variable.other</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#0088aa</string>
+          <key>background</key>
+          <string>#0088aa0f</string>
+          <key>fontStyle</key>
+          <string/>
         </dict>
       </dict>
       <dict>
@@ -145,7 +175,7 @@
           <key>foreground</key>
           <string>#aa00ee</string>
           <key>background</key>
-          <string>#aa00ee0c</string>
+          <string>#aa00ee0f</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
@@ -160,7 +190,7 @@
           <key>foreground</key>
           <string>#0088aa</string>
           <key>background</key>
-          <string>#0088aa0c</string>
+          <string>#0088aa0f</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
@@ -175,7 +205,7 @@
           <key>foreground</key>
           <string>#aa00ee</string>
           <key>background</key>
-          <string>#aa00ee0c</string>
+          <string>#aa00ee0f</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
@@ -190,7 +220,7 @@
           <key>foreground</key>
           <string>#aa00ee</string>
           <key>background</key>
-          <string>#aa00ee0c</string>
+          <string>#aa00ee0f</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
@@ -205,7 +235,7 @@
           <key>foreground</key>
           <string>#0000cc</string>
           <key>background</key>
-          <string>#0000cc0c</string>
+          <string>#0000cc0f</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
@@ -220,7 +250,7 @@
           <key>foreground</key>
           <string>#aa00ee</string>
           <key>background</key>
-          <string>#aa00ee0c</string>
+          <string>#aa00ee0f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -235,7 +265,7 @@
           <key>foreground</key>
           <string>#cc0000</string>
           <key>background</key>
-          <string>#cc00000c</string>
+          <string>#cc00000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -250,7 +280,7 @@
           <key>foreground</key>
           <string>#dd6600</string>
           <key>background</key>
-          <string>#dd66000c</string>
+          <string>#dd66000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -265,7 +295,7 @@
           <key>foreground</key>
           <string>#dd6600</string>
           <key>background</key>
-          <string>#dd66000c</string>
+          <string>#dd66000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -280,7 +310,7 @@
           <key>foreground</key>
           <string>#dd6600</string>
           <key>background</key>
-          <string>#dd66000c</string>
+          <string>#dd66000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -295,7 +325,7 @@
           <key>foreground</key>
           <string>#dd6600</string>
           <key>background</key>
-          <string>#dd66000c</string>
+          <string>#dd66000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -304,13 +334,13 @@
         <key>name</key>
         <string>Constants</string>
         <key>scope</key>
-        <string>constant, variable.language.this.js</string>
+        <string>constant, variable.language.this</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#aa00ee</string>
           <key>background</key>
-          <string>#aa00ee0c</string>
+          <string>#aa00ee0f</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
@@ -325,7 +355,7 @@
           <key>foreground</key>
           <string>#0000cc</string>
           <key>background</key>
-          <string>#0000cc0c</string>
+          <string>#0000cc0f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -340,7 +370,7 @@
           <key>foreground</key>
           <string>#0088aa</string>
           <key>background</key>
-          <string>#0088aa0c</string>
+          <string>#0088aa0f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -355,7 +385,7 @@
           <key>foreground</key>
           <string>#0088aa</string>
           <key>background</key>
-          <string>#0088aa0c</string>
+          <string>#0088aa0f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -370,7 +400,7 @@
           <key>foreground</key>
           <string>#aa00ee</string>
           <key>background</key>
-          <string>#aa00ee0c</string>
+          <string>#aa00ee0f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -385,7 +415,7 @@
           <key>foreground</key>
           <string>#0000cc</string>
           <key>background</key>
-          <string>#0000cc0c</string>
+          <string>#0000cc0f</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
@@ -400,7 +430,7 @@
           <key>foreground</key>
           <string>#ff00ff</string>
           <key>background</key>
-          <string>#ff00ff0c</string>
+          <string>#ff00ff0f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -415,7 +445,7 @@
           <key>foreground</key>
           <string>#aa00ee</string>
           <key>background</key>
-          <string>#aa00ee0c</string>
+          <string>#aa00ee0f</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
@@ -430,7 +460,7 @@
           <key>foreground</key>
           <string>#aa00ee</string>
           <key>background</key>
-          <string>#aa00ee0c</string>
+          <string>#aa00ee0f</string>
           <key>fontStyle</key>
           <string>italic</string>
         </dict>
@@ -445,7 +475,7 @@
           <key>foreground</key>
           <string>#cc0000</string>
           <key>background</key>
-          <string>#cc00000c</string>
+          <string>#cc00000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -460,7 +490,7 @@
           <key>foreground</key>
           <string>#222222</string>
           <key>background</key>
-          <string>#2222220c</string>
+          <string>#2222220f</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
@@ -475,7 +505,7 @@
           <key>foreground</key>
           <string>#0000cc</string>
           <key>background</key>
-          <string>#0000cc0c</string>
+          <string>#0000cc0f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -490,7 +520,7 @@
           <key>foreground</key>
           <string>#dd6600</string>
           <key>background</key>
-          <string>#dd66000c</string>
+          <string>#dd66000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -505,7 +535,7 @@
           <key>foreground</key>
           <string>#bb9900</string>
           <key>background</key>
-          <string>#bb99000c</string>
+          <string>#bb99000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -520,7 +550,7 @@
           <key>foreground</key>
           <string>#bb9900</string>
           <key>background</key>
-          <string>#bb99000c</string>
+          <string>#bb99000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -535,7 +565,7 @@
           <key>foreground</key>
           <string>#00aa00</string>
           <key>background</key>
-          <string>#00aa000c</string>
+          <string>#00aa000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -550,7 +580,7 @@
           <key>foreground</key>
           <string>#cc0000</string>
           <key>background</key>
-          <string>#cc00000c</string>
+          <string>#cc00000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -565,7 +595,7 @@
           <key>foreground</key>
           <string>#bb9900</string>
           <key>background</key>
-          <string>#bb99000c</string>
+          <string>#bb99000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -580,7 +610,7 @@
           <key>foreground</key>
           <string>#ff00ff</string>
           <key>background</key>
-          <string>#ff00ff0c</string>
+          <string>#ff00ff0f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -595,7 +625,7 @@
           <key>foreground</key>
           <string>#dd6600</string>
           <key>background</key>
-          <string>#dd66000c</string>
+          <string>#dd66000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -610,7 +640,7 @@
           <key>foreground</key>
           <string>#00aa00</string>
           <key>background</key>
-          <string>#00aa000c</string>
+          <string>#00aa000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -625,7 +655,7 @@
           <key>foreground</key>
           <string>#aa00ee</string>
           <key>background</key>
-          <string>#aa00ee0c</string>
+          <string>#aa00ee0f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -655,7 +685,7 @@
           <key>foreground</key>
           <string>#cc0000</string>
           <key>background</key>
-          <string>#cc00000c</string>
+          <string>#cc00000f</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
@@ -670,7 +700,7 @@
           <key>foreground</key>
           <string>#cc0000</string>
           <key>background</key>
-          <string>#cc00000c</string>
+          <string>#cc00000f</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
@@ -685,7 +715,7 @@
           <key>foreground</key>
           <string>#cc0000</string>
           <key>background</key>
-          <string>#cc00000c</string>
+          <string>#cc00000f</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
