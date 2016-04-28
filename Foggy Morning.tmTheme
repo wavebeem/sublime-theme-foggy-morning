@@ -304,7 +304,7 @@
         <key>name</key>
         <string>Constants</string>
         <key>scope</key>
-        <string>constant</string>
+        <string>constant, variable.language.this.js</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>

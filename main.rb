@@ -138,7 +138,10 @@ module Color
       ["Symbols", "constant.other.symbol"],
       ["Floats", "none"],
       ["Boolean", "constant.language.boolean"],
-      ["Constants", "constant"],
+      ["Constants", [
+        "constant",
+        "variable.language.this.js"
+      ]],
       ["Tags", [
         "entity.name.tag",
         "punctuation.definition.tag"
