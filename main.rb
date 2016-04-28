@@ -15,6 +15,7 @@ module Color
   YELLOW = "#bb9900"
   ORANGE = "#dd6600"
   PURPLE = "#aa00ee"
+  PINK = "#dd44aa"
   CYAN = "#0088aa"
   NO_ = "#ff00ff"
 
@@ -79,10 +80,10 @@ module Color
       invisibles: RED,
       lineHighlight: dilute(CYAN, 10),
       selection: dilute(CYAN, 20),
-      selectionForeground: dilute(BLACK, 90),
+      selectionForeground: BLACK,
       shadow: dilute(BLACK, 25),
       shadowWidth: 8,
-      gutter: dilute(BLACK, 0),
+      # gutter: dilute(BLACK, 0),
       gutterForeground: dilute(BLACK, 30),
       guide: dilute(BLACK, 12),
       activeGuide: dilute(BLACK, 25),
@@ -133,7 +134,7 @@ module Color
       ]],
       ["Methods", "keyword.other.special-method"],
       ["Storage", "storage"],
-      ["Support", "support.function"],
+      ["Support", "support"],
       ["Strings", [
         "string",
         "entity.other.inherited-class",
@@ -237,7 +238,8 @@ module Color
     "Integers" => style(ORANGE),
     "Floats" => style(ORANGE),
     "Boolean" => style(ORANGE),
-    "Constants" => style(PURPLE, "bold"),
+    "Constants" => style(ORANGE),
+    "Support" => style(PINK),
     "Tags" => style(BLUE),
     "Attributes" => style(CYAN),
     "Attribute IDs" => style(CYAN),

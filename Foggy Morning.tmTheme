@@ -30,13 +30,11 @@
           <key>selection</key>
           <string>#0088aa33</string>
           <key>selectionForeground</key>
-          <string>#222222e5</string>
+          <string>#222222</string>
           <key>shadow</key>
           <string>#2222223f</string>
           <key>shadowWidth</key>
           <string>8</string>
-          <key>gutter</key>
-          <string>#22222200</string>
           <key>gutterForeground</key>
           <string>#2222224c</string>
           <key>guide</key>
@@ -244,13 +242,13 @@
         <key>name</key>
         <string>Support</string>
         <key>scope</key>
-        <string>support.function</string>
+        <string>support</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#aa00ee</string>
+          <string>#dd44aa</string>
           <key>background</key>
-          <string>#aa00ee0f</string>
+          <string>#dd44aa0f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -338,11 +336,11 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#aa00ee</string>
+          <string>#dd6600</string>
           <key>background</key>
-          <string>#aa00ee0f</string>
+          <string>#dd66000f</string>
           <key>fontStyle</key>
-          <string>bold</string>
+          <string/>
         </dict>
       </dict>
       <dict>
