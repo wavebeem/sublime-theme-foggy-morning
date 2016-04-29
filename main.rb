@@ -232,7 +232,6 @@ module Color
     "Classes" => style(PURPLE, "bold"),
     "Methods" => style(PURPLE, "bold"),
     "Storage" => style(BLUE, "bold"),
-    "Support" => style(PURPLE),
     "Strings" => style(RED),
     "Symbols" => style(ORANGE),
     "Integers" => style(ORANGE),
