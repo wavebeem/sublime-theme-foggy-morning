@@ -152,7 +152,7 @@
         <key>name</key>
         <string>Variables</string>
         <key>scope</key>
-        <string>variable.paramter, variable.other</string>
+        <string>variable.parameter, variable.other</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -632,7 +632,7 @@
         <key>name</key>
         <string>Escape Characters</string>
         <key>scope</key>
-        <string>constant.character.escape</string>
+        <string>constant.character.escape, support.constant.property-value</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>

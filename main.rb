@@ -116,7 +116,7 @@ module Color
       ["Operators", "keyword.operator"],
       ["Keywords", "keyword"],
       ["Variables", [
-        "variable.paramter",
+        "variable.parameter",
         "variable.other"
       ]],
       ["Search", "entity.name.filename.find-in-files"],
@@ -182,7 +182,10 @@ module Color
       ["Changed", "markup.changed"],
       ["Colors", "constant.other.color"],
       ["Regular Expressions", "string.regexp"],
-      ["Escape Characters", "constant.character.escape"],
+      ["Escape Characters", [
+        "constant.character.escape",
+        "support.constant.property-value"
+      ]],
       ["Embedded", [
         "punctuation.section.embedded",
         "variable.interpolation"
