@@ -138,7 +138,8 @@ module Color
       ["Strings", [
         "string",
         "entity.other.inherited-class",
-        "punctuation.definition.string"
+        "punctuation.definition.string",
+        "support.constant.property-value"
       ]],
       ["Integers", "constant.numeric"],
       ["Symbols", "constant.other.symbol"],
@@ -183,13 +184,15 @@ module Color
       ["Colors", "constant.other.color"],
       ["Regular Expressions", "string.regexp"],
       ["Escape Characters", [
-        "constant.character.escape",
-        "support.constant.property-value"
+        "constant.character.escape"
       ]],
       ["Embedded", [
         "punctuation.section.embedded",
         "variable.interpolation"
       ]],
+      ["SublimeLinter Warning", "sublimelinter.mark.warning"],
+      ["SublimeLinter Gutter", "sublimelinter.gutter-mark"],
+      ["SublimeLinter Error", "sublimelinter.mark.error"],
       ["Illegal", [
         "invalid",
         "invalid.illegal"
@@ -256,6 +259,9 @@ module Color
     "Lists" => style(ORANGE),
     "Quotes" => style(YELLOW),
     "Separator" => style(YELLOW),
+    "SublimeLinter Warning" => style(YELLOW),
+    "SublimeLinter Gutter" => style(YELLOW),
+    "SublimeLinter Error" => style(RED),
     "Inserted" => style(GREEN),
     "Deleted" => style(RED),
     "Changed" => style(YELLOW),
