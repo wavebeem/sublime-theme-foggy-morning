@@ -259,9 +259,6 @@ module Color
     "Lists" => style(ORANGE),
     "Quotes" => style(YELLOW),
     "Separator" => style(YELLOW),
-    "SublimeLinter Warning" => style(YELLOW),
-    "SublimeLinter Gutter" => style(YELLOW),
-    "SublimeLinter Error" => style(RED),
     "Inserted" => style(GREEN),
     "Deleted" => style(RED),
     "Changed" => style(YELLOW),
@@ -272,6 +269,18 @@ module Color
     "Broken" => style(RED, "bold"),
     "Deprecated" => style(RED, "bold"),
     "Unimplemented" => style(RED, "bold"),
+    "SublimeLinter Warning" => {
+      foreground: YELLOW,
+      background: BLACK,
+    },
+    "SublimeLinter Gutter" => {
+      foreground: YELLOW,
+      background: BLACK,
+    },
+    "SublimeLinter Error" => {
+      foreground: RED,
+      background: BLACK,
+    },
     "Illegal" => {
       foreground: WHITE,
       background: dilute(RED, 80),
