@@ -142,7 +142,8 @@ module Color
       ["Strings", [
         "string",
         "entity.other.inherited-class",
-        "punctuation.definition.string"
+        "punctuation.definition.string",
+        "support.constant.property-value"
       ]],
       ["Integers", "constant.numeric"],
       ["Symbols", "constant.other.symbol"],
@@ -194,6 +195,9 @@ module Color
         "punctuation.section.embedded",
         "variable.interpolation"
       ]],
+      ["SublimeLinter Warning", "sublimelinter.mark.warning"],
+      ["SublimeLinter Gutter", "sublimelinter.gutter-mark"],
+      ["SublimeLinter Error", "sublimelinter.mark.error"],
       ["Illegal", [
         "invalid",
         "invalid.illegal"
@@ -270,6 +274,18 @@ module Color
     "Broken" => style(RED, "bold"),
     "Deprecated" => style(RED, "bold"),
     "Unimplemented" => style(RED, "bold"),
+    "SublimeLinter Warning" => {
+      foreground: YELLOW,
+      background: BLACK,
+    },
+    "SublimeLinter Gutter" => {
+      foreground: YELLOW,
+      background: BLACK,
+    },
+    "SublimeLinter Error" => {
+      foreground: RED,
+      background: BLACK,
+    },
     "Illegal" => {
       foreground: WHITE,
       background: dilute(RED, 80),

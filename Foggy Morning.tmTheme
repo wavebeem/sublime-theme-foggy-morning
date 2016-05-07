@@ -257,7 +257,7 @@
         <key>name</key>
         <string>Strings</string>
         <key>scope</key>
-        <string>string, entity.other.inherited-class, punctuation.definition.string</string>
+        <string>string, entity.other.inherited-class, punctuation.definition.string, support.constant.property-value</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -656,6 +656,45 @@
           <string>#aa00ee0f</string>
           <key>fontStyle</key>
           <string/>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>SublimeLinter Warning</string>
+        <key>scope</key>
+        <string>sublimelinter.mark.warning</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#bb9900</string>
+          <key>background</key>
+          <string>#222222</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>SublimeLinter Gutter</string>
+        <key>scope</key>
+        <string>sublimelinter.gutter-mark</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#bb9900</string>
+          <key>background</key>
+          <string>#222222</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>SublimeLinter Error</string>
+        <key>scope</key>
+        <string>sublimelinter.mark.error</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#cc0000</string>
+          <key>background</key>
+          <string>#222222</string>
         </dict>
       </dict>
       <dict>
