@@ -92,7 +92,10 @@ module Color
 
   def scopes
     scopes = [
-      ["Call", "meta.function-call"],
+      ["Call", [
+        "meta.function-call",
+        "support.function.less"
+      ]],
       ["Parameter", "variable.parameter.function"],
       ["Comments", [
         "comment",
@@ -116,6 +119,7 @@ module Color
       ["Operators", "keyword.operator"],
       ["Keywords", "keyword"],
       ["Variables", [
+        "variable.declaration",
         "variable.parameter",
         "variable.other"
       ]],
@@ -146,6 +150,7 @@ module Color
       ["Boolean", "constant.language.boolean"],
       ["Constants", [
         "constant",
+        "support.constant",
         "variable.language"
       ]],
       ["Tags", [
@@ -184,7 +189,6 @@ module Color
       ["Regular Expressions", "string.regexp"],
       ["Escape Characters", [
         "constant.character.escape",
-        "support.constant.property-value"
       ]],
       ["Embedded", [
         "punctuation.section.embedded",
@@ -247,7 +251,7 @@ module Color
     "Attribute IDs" => style(CYAN),
     "Selector" => style(PURPLE),
     "Headings" => style(BLUE, "bold"),
-    "Units" => style(NO_),
+    "Units" => style(ORANGE),
     "Bold" => style(PURPLE, "bold"),
     "Italic" => style(PURPLE, "italic"),
     "Code" => style(RED),
@@ -259,7 +263,7 @@ module Color
     "Inserted" => style(GREEN),
     "Deleted" => style(RED),
     "Changed" => style(YELLOW),
-    "Colors" => style(NO_),
+    "Colors" => style(ORANGE),
     "Regular Expressions" => style(ORANGE),
     "Escape Characters" => style(GREEN),
     "Embedded" => style(PURPLE),
