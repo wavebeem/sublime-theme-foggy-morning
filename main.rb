@@ -92,7 +92,7 @@ module Color
 
   def scopes
     scopes = [
-      ["Call", "meta.function-call"],
+      # ["Call", "meta.function-call"],
       ["Parameter", "variable.parameter.function"],
       ["Comments", [
         "comment",
@@ -158,7 +158,10 @@ module Color
         "entity.other.attribute-name.id",
         "punctuation.definition.entity"
       ]],
-      ["Selector", "meta.selector"],
+      ["Selector", [
+        "meta.selector",
+        "meta.object-literal.key"
+      ]],
       ["Headings", [
         "markup.heading punctuation.definition.heading",
         "entity.name.section"

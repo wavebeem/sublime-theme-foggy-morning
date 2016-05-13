@@ -45,21 +45,6 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>Call</string>
-        <key>scope</key>
-        <string>meta.function-call</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#aa00ee</string>
-          <key>background</key>
-          <string>#aa00ee0f</string>
-          <key>fontStyle</key>
-          <string/>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
         <string>Parameter</string>
         <key>scope</key>
         <string>variable.parameter.function</string>
@@ -392,7 +377,7 @@
         <key>name</key>
         <string>Selector</string>
         <key>scope</key>
-        <string>meta.selector</string>
+        <string>meta.selector, meta.object-literal.key</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
