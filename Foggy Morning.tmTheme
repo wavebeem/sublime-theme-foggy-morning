@@ -137,7 +137,7 @@
         <key>name</key>
         <string>Variables</string>
         <key>scope</key>
-        <string>variable.parameter, variable.other</string>
+        <string>variable.declaration, variable.parameter, variable.other</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -317,7 +317,7 @@
         <key>name</key>
         <string>Constants</string>
         <key>scope</key>
-        <string>constant, variable.language</string>
+        <string>constant, support.constant, variable.language</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -411,9 +411,9 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#ff00ff</string>
+          <string>#dd6600</string>
           <key>background</key>
-          <string>#ff00ff0f</string>
+          <string>#dd66000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -591,9 +591,9 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#ff00ff</string>
+          <string>#dd6600</string>
           <key>background</key>
-          <string>#ff00ff0f</string>
+          <string>#dd66000f</string>
           <key>fontStyle</key>
           <string/>
         </dict>
