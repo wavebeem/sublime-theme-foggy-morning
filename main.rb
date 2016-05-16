@@ -124,6 +124,7 @@ module Color
         "variable.other"
       ]],
       ["Search", "entity.name.filename.find-in-files"],
+      ["Search Line", "constant.numeric.line-number.match.find-in-files"],
       ["Functions", [
         "entity.name.function",
         "meta.require",
@@ -240,6 +241,7 @@ module Color
     "Delimiters" => style(YELLOW),
     "Operators" => style(YELLOW),
     "Search" => style(PURPLE, "bold"),
+    "Search Line" => style(BLUE, "bold"),
     "Keywords" => style(BLUE, "bold"),
     "Variables" => style(CYAN),
     "Functions" => style(CYAN, "bold"),
