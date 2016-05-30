@@ -78,6 +78,7 @@ module Color
       divider: BLACK,
       foreground: FG,
       invisibles: RED,
+      caret: BLACK,
       lineHighlight: dilute(CYAN, 10),
       selection: dilute(CYAN, 20),
       selectionForeground: BLACK,
