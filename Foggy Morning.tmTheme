@@ -199,7 +199,7 @@
         <key>name</key>
         <string>Classes</string>
         <key>scope</key>
-        <string>support.class, entity.name.class, entity.name.type.class, entity.name.type.module, meta.class</string>
+        <string>support.class, entity.name.class, entity.name.type.class, entity.name.type.module</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>

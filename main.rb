@@ -135,8 +135,7 @@ module Color
         "support.class",
         "entity.name.class",
         "entity.name.type.class",
-        "entity.name.type.module",
-        "meta.class"
+        "entity.name.type.module"
       ]],
       ["Methods", "keyword.other.special-method"],
       ["Storage", "storage"],
